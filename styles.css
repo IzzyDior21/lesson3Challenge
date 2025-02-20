@@ -1,0 +1,23 @@
+.mygoals {
+    color: #0000FF;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.myname {
+    color: green
+}
+
+.listitems {
+    color: red;
+}
+
+#listitemlarge {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+body {
+    background-color: yellow;
+}
