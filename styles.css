@@ -1,7 +1,13 @@
+.headers {
+   /* text-align: center;*/
+   display: flex;
+   justify-content: space-around;
+
+} 
+
 .mygoals {
-    color: rgb(213, 171, 120);
+    color: black ;
     font-size: 45px;
-    text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -9,23 +15,47 @@
     color: #ce169d;
     font-style: italic;
 }
+.listAndActionContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*divided into 6 columns*/
+    grid-row: 1fr;
+    grid-column-gap: 40px;
+    border: 4px red solid;
+    background-color: beige;
+    padding: 10px; /* added padding to both but if you look at the red and aqua.
+    This gave padding so that the paragraph isn't touching the red border container. 
+    If you want your paragraph not touching it's border go to .paragraphColumns and add padding */
+}
 
 .listitems {
-    color: rgb(213, 171, 120);
-    font-weight: bold;
+    color: #5d6d7e;
     
 }
 
 #listitemlarge {
-    color: rgb(213, 171, 120);
-    font-weight: bold;
+    color: #5d6d7e ;
+   /* font-weight: bold;*/
 }
 
-body {
-    background-color: #1c0432;
+ body { 
+    background-color: white;
 }
 
 p {
-    color: rgb(213, 171, 120);
+    color:#5d6d7e ;
     font-style: italic;
 }
+
+.firstlist {
+    grid-area: 1/1/2/2;
+    border:  4px purple solid;
+    margin: 10px;
+    padding: 25px;
+}
+
+.paragraphColumn {
+    grid-area: 1/2/2/3;
+    border: 4px aqua solid;
+    padding: 10px; /*this gives padding on all four sides*/
+}
+
